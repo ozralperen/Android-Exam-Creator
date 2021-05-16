@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="login">LOGIN</string>
+    <string name="example_mail">example@domain.com</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="phone_number">Phone Number (10 digit)</string>
+    <string name="password">Password</string>
+    <string name="password_again">Password (Again)</string>
+    <string name="choose_your_profile_picture">Choose your profile picture.</string>
+    <string name="change_picture">Change Pıcture</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_new_question">Create new questıon</string>
+    <string name="create_new_exam">Create new exam</string>
+    <string name="list_all_questions">Lıst all questıons</string>
+    <string name="change_exam_settings">Change Exam Settıngs</string>
+    <string name="you_are_about_to_delete_a_question">You are about to delete a question.</string>
+    <string name="delete">Delete</string>
+</resources>

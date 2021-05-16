@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".SignUpScreen">
+
+    <EditText
+        android:id="@+id/SignUpNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:nextFocusRight="@id/SignUpSurnameET"
+        android:nextFocusDown="@id/SignUpSurnameET"
+        android:nextFocusForward="@id/SignUpSurnameET"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/SignUpProfilePictureIB"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpProfilePictureIB" />
+
+    <EditText
+        android:id="@+id/SignUpSurnameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/surname"
+        android:inputType="textPersonName"
+        android:nextFocusLeft="@id/SignUpNameET"
+        android:nextFocusRight="@id/SignUpMailET"
+        android:nextFocusUp="@id/SignUpNameET"
+        android:nextFocusDown="@id/SignUpMailET"
+        android:nextFocusForward="@id/SignUpMailET"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/SignUpNameET"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpNameET" />
+
+    <EditText
+        android:id="@+id/SignUpMailET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:nextFocusLeft="@id/SignUpSurnameET"
+        android:nextFocusRight="@id/SignUpPhoneET"
+        android:nextFocusUp="@id/SignUpSurnameET"
+        android:nextFocusDown="@id/SignUpPhoneET"
+        android:nextFocusForward="@id/SignUpPhoneET"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/SignUpSurnameET"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpSurnameET" />
+
+    <EditText
+        android:id="@+id/SignUpBDayET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/birth_date"
+        android:inputType="date"
+        android:nextFocusLeft="@id/SignUpPhoneET"
+        android:nextFocusRight="@id/SignUpPasswordET"
+        android:nextFocusUp="@id/SignUpPhoneET"
+        android:nextFocusDown="@id/SignUpPasswordET"
+        android:nextFocusForward="@id/SignUpPasswordET"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/SignUpMailET"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpPhoneET" />
+
+    <EditText
+        android:id="@+id/SignUpPhoneET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:nextFocusLeft="@id/SignUpMailET"
+        android:nextFocusRight="@id/SignUpBDayET"
+        android:nextFocusUp="@id/SignUpMailET"
+        android:nextFocusDown="@id/SignUpBDayET"
+        android:nextFocusForward="@id/SignUpBDayET"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/SignUpMailET"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpMailET" />
+
+    <EditText
+        android:id="@+id/SignUpPasswordET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:nextFocusLeft="@id/SignUpBDayET"
+        android:nextFocusRight="@id/SignUpPasswordRepeatET"
+        android:nextFocusUp="@id/SignUpBDayET"
+        android:nextFocusDown="@id/SignUpPasswordRepeatET"
+        android:nextFocusForward="@id/SignUpPasswordRepeatET"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/SignUpBDayET"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpBDayET" />
+
+    <EditText
+        android:id="@+id/SignUpPasswordRepeatET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/password_again"
+        android:inputType="textPassword"
+        android:nextFocusLeft="@id/SignUpPasswordET"
+        android:nextFocusUp="@id/SignUpPasswordET"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/SignUpPasswordET"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpPasswordET" />
+
+    <Button
+        android:id="@+id/SignUpSignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_up"
+        app:backgroundTint=" #FF9900"
+        app:layout_constraintStart_toStartOf="@+id/SignUpPasswordRepeatET"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpPasswordRepeatET" />
+
+    <ImageButton
+        android:id="@+id/SignUpProfilePictureIB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/male1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

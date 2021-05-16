@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ProfilePictureADBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/focusedBackground">
+
+    <ScrollView
+        android:id="@+id/profilePictureADRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PPADQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/choose_your_profile_picture"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/ProfilePictureOptionsRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PPADQuestion">
+
+                <RadioButton
+                    android:id="@+id/ProfilePictureAlternative1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/female1"
+                    tools:layout_editor_absoluteX="70dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <RadioButton
+                    android:id="@+id/ProfilePictureAlternative2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/female2"
+                    tools:layout_editor_absoluteX="70dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <RadioButton
+                    android:id="@+id/ProfilePictureAlternative3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/male1"
+                    tools:layout_editor_absoluteX="70dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <RadioButton
+                    android:id="@+id/ProfilePictureAlternative4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/male2"
+                    tools:layout_editor_absoluteX="70dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/SelectProfilePictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#88bb00"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/change_picture"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/CancelProfilePictureButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/CancelProfilePictureButton" />
+
+            <Button
+                android:id="@+id/CancelProfilePictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/design_default_color_error"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/SelectProfilePictureButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProfilePictureOptionsRB" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
